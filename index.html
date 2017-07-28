@@ -19,18 +19,20 @@
           </picture>
         </div>
         <button class="main-navigation__toogler">Открыть меню</button>
-      </div>
         <ul class="main-navigation__list">
           <li class="main-navigation__item"><a class="main-navigation__link" href="#">Главная</a></li>
           <li class="main-navigation__item"><a class="main-navigation__link" href="#">Фотографии</a></li>
           <li class="main-navigation__item"><a class="main-navigation__link" href="#">Конкурс</a></li>
           <li class="main-navigation__item"><a class="main-navigation__link" href="#">HTML Academy</a></li>
         </ul>
+      </div>
     </nav>
   </header>
   <main class="page-content">
     <section class="intro">
+      <div class="intro__container intro__container--mobile">
         <h1 class="intro__heading">Взгляните на жизнь иначе!</h1>
+      </div>
         <div class="intro__download-app">
           <div class="intro__container">
             <div class="intro__downloading">
@@ -114,7 +116,7 @@
     </section>
     <section class="price">
       <input class="price__input" type="radio" name="price" id="price__slide1">
-      <input class="price__input" type="radio" name="price" id="price__slide2">
+      <input class="price__input" type="radio" name="price" id="price__slide2" checked>
       <input class="price__input" type="radio" name="price" id="price__slide3">
       <div class="price__container">
       <table class="price-table">
@@ -170,15 +172,15 @@
       <section class="main-footer__info">
         <h1 class="main-footer__heading">Остались вопросы? Свяжитесь с нами!</h1>
         <div class="main-footer__list">
-          <div class="main-footer__item">
+          <div class="main-footer__item main-footer__item--first">
             <h2 class="main-footer__title">Звоните:</h2>
             <p class="main-footer__contact">+7 (812) 555-66-66</p>
           </div>
-          <div class="main-footer__item">
+          <div class="main-footer__item main-footer__item--second">
             <h2 class="main-footer__title">Пишите:</h2>
             <p class="main-footer__contact main-footer__contact--mail">mail@htmlacademy.ru</p>
           </div>
-          <div class="main-footer__item">
+          <div class="main-footer__item main-footer__item--third">
             <h2 class="main-footer__title">Приезжайте в гости:</h2>
             <p class="main-footer__contact">ул. Большая Конюшенная, 19/8</p>
           </div>
@@ -189,15 +191,16 @@
     <section class="footer-links">
       <div class="footer-links__container">
         <div class="footer-links__logo">
-          <img src="" alt="">
+          <img src="img/logo-blue-tablet.svg" alt="pink" width="147" height="40">
         </div>
         <div class="footer-links__social">
-          <a class="social-link social-link--tw">Twitter</a>
-          <a class="social-link social-link--fb">Facebook</a>
-          <a class="social-link social-link--yt">YouTube</a>
+          <a class="footer-links__social-link footer-links__social-link--tw">Twitter</a>
+          <a class="footer-links__social-link footer-links__social-link--fb">Facebook</a>
+          <a class="footer-links__social-link footer-links__social-link--yt">YouTube</a>
         </div>
         <div class="footer-links__copyright">
-          <a class="copyright-link">HTML Academy</a>
+          Разработано
+          <a class="footer-links__copyright-link"><img src="img/logo_Academy.png" alt="HTML ACADEMY" width="27" height="34"></a>
         </div>
       </div>
     </section>

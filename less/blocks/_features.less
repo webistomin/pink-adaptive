@@ -1,0 +1,215 @@
+.features {
+  padding-top: 26px;
+
+
+  &__container {
+    .container();
+  }
+
+  &__heading {
+    font-size: 24px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 34px;
+  }
+
+  &__list {
+    padding-top: 75px;
+    background-color: #f2f2f2;
+    text-align: center;
+    background-image: url("img/triangle-white.svg"), url("img/iphone-screen-mobile@1x.png");
+    background-position: center top, center 109%;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 100% 35px, 156px auto;
+  }
+
+  &-item__title {
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &-item__text {
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  &-item__text--last {
+    margin-bottom: 0;
+    padding-bottom: 340px;
+  }
+
+  &__promo {
+    display: none;
+  }
+
+}
+
+@media @tablet-widths {
+  .features {
+
+    &__heading {
+      font-size: 30px;
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+
+    &__heading--center {
+      max-width: 325px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    &__list-container {
+      .container();
+      max-width: 337px;
+      padding-left: 330px;
+    }
+
+    &__list {
+      text-align: left;
+      background-image: url("img/iphone-screen-tablet-3@1x.png"), url("img/triangle-white.svg");
+      background-position: 10% 130%,center top;
+      background-repeat: no-repeat,no-repeat;
+      background-size: auto auto,100% 70px;
+    }
+
+    &-item__text--last {
+      padding-bottom: 44px;
+    }
+
+    &-item__text {
+      line-height: 24px;
+    }
+
+    &__promo {
+      display: block;
+      padding-bottom: 65px;
+      text-align: left;
+      background-image: url("img/diagram-fill.png");
+      background-size: 240px 277px;
+      background-position: 50px 0;
+      background-repeat: no-repeat;
+    }
+
+    &__promo-container {
+      .container();
+      margin-top: 75px;
+      padding-left: 262px;
+      max-width: 280px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__promo-title {
+      font-size: 30px;
+      line-height: 36px;
+      color: #000000;
+    }
+
+    &__promo-text {
+      font-size: 14px;
+      line-height: 24px;
+      color: #283645;
+    }
+
+    &__promo-link {
+      font-size: 14px;
+      line-height: 24px;
+      color: #d22856;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .features {
+
+    &__heading {
+      font-size: 50px;
+    }
+
+    &__heading--center {
+      max-width: 420px;
+    }
+
+    &__list {
+      text-align: center;
+      background-image: url(img/triangle-white.svg);
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 100% 70px;
+
+    }
+
+    &__list-container {
+      .container();
+      max-width: 940px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-left: 0;
+      margin-top: -75px;
+    }
+
+    &-item__title {
+      order: 2;
+      margin-top: 50px;
+    }
+
+    &-item__text {
+      order: 3;
+    }
+
+    &-item__image {
+      order: 1;
+      height: 300px;
+      background-position: center center;
+    }
+    
+    &-item__image--image1 {
+      background-image: url("img/iphone-screen-desktop-1@1x.png");
+    }
+
+    &-item__image--image2 {
+      background-image: url("img/iphone-screen-desktop-2@1x.png");
+    }
+
+    &-item__image--image3 {
+      background-image: url("img/iphone-screen-desktop-3@1x.png");
+    }
+
+    &-item {
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__promo {
+      background-color: #f2f2f2;
+      background-image: none;
+      padding-bottom: 30px;
+    }
+
+    &__promo-link {
+      margin-top: 30px;
+    }
+
+    &__promo-container {
+      max-width: 570px;
+      padding-left: 345px;
+      padding-bottom: 118px;
+      margin-top: 0;
+      background-image: url("img/diagram-fill.png");
+      background-size: 240px 277px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+}
