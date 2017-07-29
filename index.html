@@ -187,7 +187,7 @@
         </div>
     </section>
     </div>
-    <section class="footer-map"></section>
+    <section class="footer-map" id="map-canvas"></section>
     <section class="footer-links">
       <div class="footer-links__container">
         <div class="footer-links__logo">
@@ -219,5 +219,29 @@
           }
       });
   </script>
+  <script>
+      function initMap() {
+          var mapCanvas = document.getElementById('map-canvas');
+
+          var mapOptions = {
+              scrollwheel: false,
+              center: new google.maps.LatLng(59.9388218,30.3230753),
+              zoom: 19,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+
+          var image = './img/map-marker.svg';
+          var myLatLng = new google.maps.LatLng(59.9388218,30.3230753);
+          var pinkMarker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              icon: image
+          });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEtp6k9TdryARFA631p-VE3kE1sBie25E&callback=initMap"
+          type="text/javascript"></script>
 </body>
 </html>
