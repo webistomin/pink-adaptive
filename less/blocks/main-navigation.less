@@ -12,17 +12,17 @@
   &__link {
     display: block;
     text-align: center;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid @black;
     border-top: 1px solid #485461;
     padding: 20px 0;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
-    background-color: #283645;
+    background-color: @darkblue;
   }
 
   &__link:hover {
-    color: #d22856;
+    color: @pink;
   }
 
   &__link:active {
@@ -39,11 +39,11 @@
   }
 
   &--opened {
-    background: #283645;
+    background: @darkblue;
   }
 
   &--opened &__list {
-    border-top: 1px solid #000000;
+    border-top: 1px solid @black;
   }
 
   &__logo {
@@ -105,9 +105,9 @@
   }
 
   &--closed &__toogler:hover::before {
-    background-color: #d22856;
-    box-shadow: 0 9px 0 0 #d22856,
-    0 18px 0 0 #d22856;
+    background-color: @pink;
+    box-shadow: 0 9px 0 0 @pink,
+    0 18px 0 0 @pink;
   }
 
     &--closed &__toogler:active::before {
@@ -116,7 +116,7 @@
 
     &--opened &__toogler:hover::before,
      &--opened &__toogler:hover::after {
-       background-color: #d22856;
+       background-color: @pink;
      }
 
     &--opened &__toogler:active::before,
@@ -185,8 +185,8 @@
     }
 
     &__link:hover {
-      color: #FFFFFF;
-      border-bottom: 2px solid #FFFFFF;
+      color: @white;
+      border-bottom: 2px solid @white;
     }
 
     &__link:active {

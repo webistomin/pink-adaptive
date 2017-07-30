@@ -9,7 +9,7 @@
   &__heading {
     font-size: 24px;
     line-height: 30px;
-    color: #283645;
+    color: @darkblue;
     text-align: center;
     font-weight: normal;
     margin-bottom: 34px;
@@ -17,23 +17,27 @@
 
   &__list {
     padding-top: 75px;
-    background-color: #f2f2f2;
+    background-color: @grey;
     text-align: center;
     background-image: url("img/triangle-white.svg"), url("img/iphone-screen-mobile@1x.png");
     background-position: center top, center 109%;
     background-repeat: no-repeat,no-repeat;
     background-size: 100% 35px, 156px auto;
+
+    @media @retina {
+      background-image: url("img/triangle-white.svg"), url("img/iphone-screen-mobile@2x.png");
+    }
   }
 
   &-item__title {
-    color: #000000;
+    color: @black;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
   }
 
   &-item__text {
-    color: #283645;
+    color: @darkblue;
     font-size: 14px;
     line-height: 30px;
     margin-bottom: 35px;
@@ -78,6 +82,10 @@
       background-position: 10% 130%,center top;
       background-repeat: no-repeat,no-repeat;
       background-size: auto auto,100% 70px;
+
+      @media @retina {
+        background-image: url("img/iphone-screen-tablet-3@2x.png"), url("img/triangle-white.svg");
+      }
     }
 
     &-item__text--last {
@@ -110,19 +118,19 @@
     &__promo-title {
       font-size: 30px;
       line-height: 36px;
-      color: #000000;
+      color: @black;
     }
 
     &__promo-text {
       font-size: 14px;
       line-height: 24px;
-      color: #283645;
+      color: @darkblue;
     }
 
     &__promo-link {
       font-size: 14px;
       line-height: 24px;
-      color: #d22856;
+      color: @pink;
       text-decoration: underline;
     }
   }
@@ -175,14 +183,26 @@
     
     &-item__image--image1 {
       background-image: url("img/iphone-screen-desktop-1@1x.png");
+
+      @media @retina {
+        background-image: url("img/iphone-screen-desktop-1@2x.png");
+      }
     }
 
     &-item__image--image2 {
       background-image: url("img/iphone-screen-desktop-2@1x.png");
+
+      @media @retina {
+        background-image: url("img/iphone-screen-desktop-2@2x.png");
+      }
     }
 
     &-item__image--image3 {
       background-image: url("img/iphone-screen-desktop-3@1x.png");
+
+      @media @retina {
+        background-image: url("img/iphone-screen-desktop-3@2x.png");
+      }
     }
 
     &-item {
@@ -192,7 +212,7 @@
     }
 
     &__promo {
-      background-color: #f2f2f2;
+      background-color: @grey;
       background-image: none;
       padding-bottom: 30px;
     }

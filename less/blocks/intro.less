@@ -4,10 +4,14 @@
       &__heading {
         min-height: 462px;
         font-size: 0;
-        background-image: url("img/iphone-hand-mobile@1x.png"), url("img/background-mobile@1x.jpg");
+        background-image: url("img/iphone-hand-mobile.png"), url("img/background-mobile@1x.jpg");
         background-position: 20% 176px, center top;
         background-repeat: no-repeat, no-repeat;
         background-size: auto, cover;
+
+        @media @retina {
+          background-image: url("img/iphone-hand-mobile@1x.png"),url("img/background-mobile@1x.jpg");
+        }
       }
     }
 
@@ -35,14 +39,14 @@
       line-height: 18px;
       font-weight: bold;
       text-align: center;
-      color: #FFFFFF;
+      color: @white;
       border: 3px solid white;
       border-radius: 27px;
       padding: 15px 0;
     }
 
     &__downloading-btn:hover {
-      background-color: #FFFFFF;
+      background-color: @white;
       color: #d22856;
     }
 
@@ -84,7 +88,7 @@
       margin: 0 auto;
       font-size: 14px;
       line-height: 24px;
-      color: #ffffff;
+      color: @white;
       text-align: center;
     }
 
@@ -100,6 +104,10 @@
       background-position: -5px 184px,center top;
       background-repeat: no-repeat;
 
+      @media @retina {
+        background-image: url("img/iphone-hand-tablet@2x.png"), url("img/background-tablet@2x.jpg");
+      }
+
       &__heading {
         width: 200px;
         padding-top: 207px;
@@ -108,7 +116,7 @@
         font-weight: normal;
         margin: 0;
         margin-left: 95px;
-        color: #FFFFFF;
+        color: @white;
         text-align: center;
       }
 
@@ -143,13 +151,17 @@
       background-size: auto, cover;
       background-repeat: no-repeat;
 
+      @medeia @retina {
+      background-image: url("img/iphone-hand-desktop@2x.png"), url("img/background-fullsize.jpg");
+    }
+
       &__heading {
         width: 200px;
         padding-top: 207px;
         font-size: 40px;
         line-height: 1.2;
         font-weight: normal;
-        color: #FFFFFF;
+        color: @white;
         text-align: center;
         margin: 50px;
         margin-bottom: 0;
@@ -175,7 +187,7 @@
         line-height: 18px;
         font-weight: bold;
         text-align: center;
-        color: #FFFFFF;
+        color: @white;
         border: 3px solid white;
         border-radius: 27px;
         padding: 15px 45px;
@@ -183,8 +195,8 @@
       }
 
       &__downloading-btn:hover {
-        background-color: #FFFFFF;
-        color: #d22856;
+        background-color: @white;
+        color: @pink;
       }
 
       &__downloading-btn:active {
@@ -225,7 +237,7 @@
         margin: 0 auto;
         font-size: 14px;
         line-height: 24px;
-        color: #ffffff;
+        color: @white;
         text-align: center;
       }
 
