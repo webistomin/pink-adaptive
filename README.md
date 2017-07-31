@@ -7,6 +7,6 @@ _Не удаляйте и не обращайте внимание на файл
 _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
 ---
 
-![alt text](img/Pink-browser.jpg)
+![alt text](mockup/Pink-browser.jpg)
 ![alt text](img/Pink-iphones-3x-1.jpg)
 ![alt text](img/Pink-macbook-iphone-ipad.jpg)
