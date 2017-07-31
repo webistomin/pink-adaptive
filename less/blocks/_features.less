@@ -10,7 +10,7 @@
     line-height: 30px;
     color: @darkblue;
     text-align: center;
-    font-weight: normal;
+    font-weight: 300;
     margin-bottom: 34px;
   }
 
@@ -18,13 +18,13 @@
     padding-top: 75px;
     background-color: @grey;
     text-align: center;
-    background-image: url("img/triangle-white.svg"), url("img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/triangle-white.svg"), url("../img/iphone-screen-mobile@1x.png");
     background-position: center top, center 109%;
     background-repeat: no-repeat,no-repeat;
     background-size: 100% 35px, 156px auto;
 
     @media @retina-mob {
-      background-image: url("img/triangle-white.svg"), url("img/iphone-screen-mobile@2x.png");
+      background-image: url("../img/triangle-white.svg"), url("../img/iphone-screen-mobile@2x.png");
     }
   }
 
@@ -38,7 +38,7 @@
   &-item__text {
     color: @darkblue;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 24px;
     margin-bottom: 35px;
   }
 
@@ -77,14 +77,14 @@
 
     &__list {
       text-align: left;
-      background-image: url("img/iphone-screen-tablet-3@1x.png"), url("img/triangle-white.svg");
+      background-image: url("../img/iphone-screen-tablet-3@1x.png"), url("../img/triangle-white.svg");
       background-position: 10% 130%,center top;
       background-repeat: no-repeat,no-repeat;
       background-size: auto auto,100% 70px;
 
       @media @retina-tab {
-        background-image: url("img/iphone-screen-tablet-3@2x.png"), url("img/triangle-white.svg");
-        background-size:  auto 488px,100% 70px
+        background-image: url("../img/iphone-screen-tablet-3@2x.png"), url("../img/triangle-white.svg");
+        background-size: auto 488px,100% 70px
       }
     }
 
@@ -100,7 +100,7 @@
       display: block;
       padding-bottom: 65px;
       text-align: left;
-      background-image: url("img/diagram-fill.svg");
+      background-image: url("../img/diagram-fill.svg");
       background-size: 240px 277px;
       background-position: 50px 0;
       background-repeat: no-repeat;
@@ -149,7 +149,7 @@
 
     &__list {
       text-align: center;
-      background-image: url(img/triangle-white.svg);
+      background-image: url(../img/triangle-white.svg);
       background-position: center top;
       background-repeat: no-repeat;
       background-size: 100% 70px;
@@ -172,6 +172,8 @@
     }
 
     &-item__text {
+      font-size: 18px;
+      line-height: 30px;
       order: 3;
     }
 
@@ -182,28 +184,28 @@
     }
     
     &-item__image--image1 {
-      background-image: url("img/iphone-screen-desktop-1@1x.png");
+      background-image: url("../img/iphone-screen-desktop-1@1x.png");
 
       @media @retina-desk {
-        background-image: url("img/iphone-screen-desktop-1@2x.png");
+        background-image: url("../img/iphone-screen-desktop-1@2x.png");
         background-size: cover;
       }
     }
 
     &-item__image--image2 {
-      background-image: url("img/iphone-screen-desktop-2@1x.png");
+      background-image: url("../img/iphone-screen-desktop-2@1x.png");
 
       @media @retina-desk {
-        background-image: url("img/iphone-screen-desktop-2@2x.png");
+        background-image: url("../img/iphone-screen-desktop-2@2x.png");
         background-size: cover;
       }
     }
 
     &-item__image--image3 {
-      background-image: url("img/iphone-screen-desktop-3@1x.png");
+      background-image: url("../img/iphone-screen-desktop-3@1x.png");
 
       @media @retina-desk {
-        background-image: url("img/iphone-screen-desktop-3@2x.png");
+        background-image: url("../img/iphone-screen-desktop-3@2x.png");
         background-size: cover;
       }
     }
@@ -220,7 +222,14 @@
       padding-bottom: 30px;
     }
 
+    &__promo-text {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
     &__promo-link {
+      font-size: 18px;
+      line-height: 30px;
       margin-top: 30px;
     }
 
@@ -229,7 +238,7 @@
       padding-left: 345px;
       padding-bottom: 118px;
       margin-top: 0;
-      background-image: url("img/diagram-fill.svg");
+      background-image: url("../img/diagram-fill.svg");
       background-size: 240px 277px;
       background-position: 0 0;
       background-repeat: no-repeat;
