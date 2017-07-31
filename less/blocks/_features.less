@@ -1,7 +1,6 @@
 .features {
   padding-top: 26px;
 
-
   &__container {
     .container();
   }
@@ -24,7 +23,7 @@
     background-repeat: no-repeat,no-repeat;
     background-size: 100% 35px, 156px auto;
 
-    @media @retina {
+    @media @retina-mob {
       background-image: url("img/triangle-white.svg"), url("img/iphone-screen-mobile@2x.png");
     }
   }
@@ -83,8 +82,9 @@
       background-repeat: no-repeat,no-repeat;
       background-size: auto auto,100% 70px;
 
-      @media @retina {
+      @media @retina-tab {
         background-image: url("img/iphone-screen-tablet-3@2x.png"), url("img/triangle-white.svg");
+        background-size:  auto 488px,100% 70px
       }
     }
 
@@ -100,7 +100,7 @@
       display: block;
       padding-bottom: 65px;
       text-align: left;
-      background-image: url("img/diagram-fill.png");
+      background-image: url("img/diagram-fill.svg");
       background-size: 240px 277px;
       background-position: 50px 0;
       background-repeat: no-repeat;
@@ -184,24 +184,27 @@
     &-item__image--image1 {
       background-image: url("img/iphone-screen-desktop-1@1x.png");
 
-      @media @retina {
+      @media @retina-desk {
         background-image: url("img/iphone-screen-desktop-1@2x.png");
+        background-size: cover;
       }
     }
 
     &-item__image--image2 {
       background-image: url("img/iphone-screen-desktop-2@1x.png");
 
-      @media @retina {
+      @media @retina-desk {
         background-image: url("img/iphone-screen-desktop-2@2x.png");
+        background-size: cover;
       }
     }
 
     &-item__image--image3 {
       background-image: url("img/iphone-screen-desktop-3@1x.png");
 
-      @media @retina {
+      @media @retina-desk {
         background-image: url("img/iphone-screen-desktop-3@2x.png");
+        background-size: cover;
       }
     }
 
@@ -226,7 +229,7 @@
       padding-left: 345px;
       padding-bottom: 118px;
       margin-top: 0;
-      background-image: url("img/diagram-fill.png");
+      background-image: url("img/diagram-fill.svg");
       background-size: 240px 277px;
       background-position: 0 0;
       background-repeat: no-repeat;

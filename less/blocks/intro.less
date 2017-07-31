@@ -1,19 +1,22 @@
-@media @mobile-and-tablet {
+@media @mobile-width-only {
   .intro {
-    @media @mobile-width-only {
-      &__heading {
-        min-height: 462px;
-        font-size: 0;
-        background-image: url("img/iphone-hand-mobile.png"), url("img/background-mobile@1x.jpg");
-        background-position: 20% 176px, center top;
-        background-repeat: no-repeat, no-repeat;
-        background-size: auto, cover;
+    &__heading {
+      min-height: 462px;
+      font-size: 0;
+      background-image: url("img/iphone-hand-mobile.png"), url("img/background-mobile@1x.jpg");
+      background-position: 20% 176px, center top;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto, cover;
 
-        @media @retina {
-          background-image: url("img/iphone-hand-mobile@1x.png"),url("img/background-mobile@1x.jpg");
-        }
+      @media @retina-mob {
+        background-image: url("img/iphone-hand-mobile@1x.png"),url("img/background-mobile@1x.jpg");
       }
     }
+  }
+}
+
+@media @mobile-and-tablet {
+  .intro {
 
     &__container {
       .container();
@@ -95,6 +98,7 @@
   }
 }
 
+
   @media @tablet-widths {
     .intro {
       display: flex;
@@ -104,8 +108,11 @@
       background-position: -5px 184px,center top;
       background-repeat: no-repeat;
 
-      @media @retina {
+      @media @retina-tab {
         background-image: url("img/iphone-hand-tablet@2x.png"), url("img/background-tablet@2x.jpg");
+        background-size: auto 565px,cover;
+        background-position: -5px 184px,center top;
+        background-repeat: no-repeat;
       }
 
       &__heading {
@@ -113,7 +120,7 @@
         padding-top: 207px;
         font-size: 40px;
         line-height: 1.2;
-        font-weight: normal;
+        font-weight: 300;
         margin: 0;
         margin-left: 95px;
         color: @white;
@@ -151,7 +158,7 @@
       background-size: auto, cover;
       background-repeat: no-repeat;
 
-      @medeia @retina {
+      @medeia @retina-desk {
       background-image: url("img/iphone-hand-desktop@2x.png"), url("img/background-fullsize.jpg");
     }
 
@@ -160,7 +167,7 @@
         padding-top: 207px;
         font-size: 40px;
         line-height: 1.2;
-        font-weight: normal;
+        font-weight: 300;
         color: @white;
         text-align: center;
         margin: 50px;
