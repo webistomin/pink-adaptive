@@ -5,8 +5,8 @@
     "description": "Личный проект «Pink» от HTML Academy",
     "devDependencies": {
         "@htmlacademy/editorconfig-cli": "1.x",
-        "autoprefixer": "6.7.x",
-        "browser-sync": "2.18.12",
+        "autoprefixer": "7.1.2",
+        "browser-sync": "2.18.13",
         "css-mqpacker": "^6.0.1",
         "del": "^3.0.0",
         "gulp": "^3.9.1",
@@ -16,13 +16,13 @@
         "gulp-js-minify": "0.0.3",
         "gulp-less": "^3.3.2",
         "gulp-plumber": "1.1.0",
-        "gulp-postcss": "6.4.0",
+        "gulp-postcss": "7.0.0",
         "gulp-rename": "^1.2.2",
         "gulp-svgmin": "^1.2.4",
         "gulp-svgstore": "^6.1.0",
         "imagemin-jpegtran": "^5.0.2",
         "imagemin-optipng": "^5.2.1",
-        "run-sequence": "^1.2.2"
+        "run-sequence": "2.1.0"
     },
     "scripts": {
         "test": "editorconfig-cli",
