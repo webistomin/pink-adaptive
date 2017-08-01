@@ -14,5 +14,5 @@ _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
 
 [travis-image]: https://travis-ci.org/webistomin/pink-adaptive.svg?branch=master
 [travis-url]: https://travis-ci.org/webistomin/pink-adaptive
-[dependency-image]: https://david-dm.org/webistomin/pink-adaptive.svg?style=transparent
+[dependency-image]: https://david-dm.org/webistomin/pink-adaptive/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/webistomin/pink-adaptive
