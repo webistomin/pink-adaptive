@@ -34,23 +34,24 @@
         </nav>
     </header>
     <main class="page-content">
-        <section class="intro">
-            <div class="intro__container intro__container--mobile">
-                <h1 class="intro__heading">Взгляните на жизнь иначе!</h1>
+        <section class="intro intro--photo">
+            <div class="intro__container intro__container--mobile intro__container--photo">
+                <h1 class="intro__heading intro__heading--photo">Фотографии пользователей</h1>
             </div>
         </section>
         <section class="panorama">
             <div class="panorama__container">
                 <h2 class="panorama__heading">Взгляните на фотографии, которые выкладывают пользователи!</h2>
-                <h2 class="panorama__heading">Видите, как не хватает ваших?</h2>
+                <h2 class="panorama__heading panorama__heading--padding">Видите, как не хватает ваших?</h2>
             </div>
             <div class="panorama__photo">
+                  <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="panorama__item-photo">
                 <div class="panorama__container">
                     <div class="panorama__today">Панорама дня</div>
                 </div>
             </div>
             <div class="panorama__comment">
-                <div class="panorama__container">
+                <div class="panorama__container panorama__container--grey">
                     <div class="panorama__name">
                         Анна
                         <div class="panorama__time">
@@ -61,13 +62,13 @@
                         <span>Нравится: 215</span>
                     </div>
                     <div class="panorama__text">
-                        <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задайте свои вопросы!</p>
+                        <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                     </div>
                 </div>
             </div>
 
             <div class="panorama__gallery">
-
+              <div class="panorama__container">
                 <div class="panorama__item">
                     <img src="img/photo-1-mobile@1x.jpg" alt="" class="panorama__item-photo">
                     <div class="panorama__item-post">
@@ -175,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-
+              </div>
             </div>
         </section>
         <section class="upload">
@@ -183,31 +184,38 @@
                 <h2 class="upload__heading">Затмите их всех!</h2>
                 <h2 class="upload__heading">Выкладывайте всё, что накопилось в телефоне!</h2>
             </div>
+          <div class="upload__filter">
             <div class="upload__container">
-                <div class="upload__filter">
                     <div class="upload__wrapper--left">
-                        <img src="" alt="">
+                        <img src="img/photo-7-mobile@1x.jpg" alt="">
                     </div>
+                  </div>
                     <div class="upload__wrapper--right">
                         <form action="#" class="upload__form">
-                            <label class="upload__tool" for="crop">
-              <input class="upload__range" type="range" min="1" max="10" step="1" value="3" id="crop">
-            </label>
-                            <label class="upload__tool" for="color">
-              <input class="upload__range" type="range" min="1" max="10" step="1" value="3" id="color">
-            </label>
-                            <label class="upload__tool" for="contrast">
-              <input class="upload__range" type="range" min="1" max="10" step="1" value="3" id="contrast">
-            </label>
-                            <input type="submit" value="Запостить">
-                            <input type="reset" value="Сбросить">
+                          <div class="upload__tools">
+                            <label class="upload__tool upload__tool--first" for="crop"></label>
+                            <label class="upload__tool upload__tool--second" for="color"></label>
+                            <label class="upload__tool upload__tool--third" for="contrast"></label>
+                          </div>
+                            <div class="upload__inputs">
+                              <div class="upload__container">
+                              <input class="upload__range" type="range" min="1" max="10" step="1" value="3" id="crop">
+                              <input class="upload__range upload__range--hidden" type="range" min="1" max="10" step="1" value="3" id="color">
+                              <input class="upload__range upload__range--hidden" type="range" min="1" max="10" step="1" value="3" id="contrast">
+                              </div>
+                            </div>
+                            <div class="upload__buttons">
+                              <div class="upload__container">
+                            <input class="upload__btn" type="submit" value="Запостить">
+                            <input class="upload__btn upload__btn--margin" type="reset" value="Сбросить">
+                              </div>
+                            </div>
                         </form>
                     </div>
-                </div>
             </div>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--photo">
         <section class="footer-links">
             <div class="footer-links__container">
                 <div class="footer-links__logo">
@@ -225,5 +233,6 @@
             </div>
         </section>
     </footer>
+    <script src="js/toggler.js"></script>
 </body>
 </html>

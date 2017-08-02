@@ -13,6 +13,19 @@
       }
     }
 
+    &__heading--photo {
+      width: 165px;
+      text-indent: 10px;
+      min-height: initial;
+      font-size: 24px;
+      font-weight: 300;
+      color: @white;
+      padding: 0;
+      padding-top: 100px;
+      margin: 0 auto;
+      background-image: none;
+    }
+
     &__download-app {
       padding-top: 30px;
       background-color: #1d2631;
@@ -27,6 +40,13 @@
 @media @mobile-and-tablet {
   .intro {
 
+    &--photo {
+      font-size: 24px;
+      min-height: 237px;
+      background-image: url("../img/background-mobile@1x.jpg");
+      background-position: center top;
+    }
+
     &__container {
       .container();
     }
@@ -34,6 +54,10 @@
     &__container--mobile {
       width: auto;
       margin: 0;
+    }
+
+    &__container--photo {
+      .container();
     }
 
     &__downloading {
