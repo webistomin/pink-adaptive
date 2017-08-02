@@ -21,6 +21,10 @@
       background-color: @grey;
     }
 
+    &__photo {
+      width: 100%;
+    }
+
     &__tools {
       position: relative;
       margin-top: 30px;
@@ -161,10 +165,42 @@
       border-radius: 27px;
       padding: 15px 0;
       margin-bottom: 12px;
+      background: transparent;
     }
 
     &__btn--margin {
       margin-bottom: 0;
     }
+  }
+}
+
+@media @tablet-widths {
+  .upload {
+    &__heading {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__filter {
+      padding-top: 57px;
+      padding-bottom: 57px;
+    }
+
+    &__container--flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__wrapper--left {
+      line-height: 0;
+    }
+
+    &__wrapper--right {
+      width: 300px;
+    }
+
+
+
   }
 }
