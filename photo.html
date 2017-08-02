@@ -45,7 +45,11 @@
                 <h2 class="panorama__heading panorama__heading--padding">Видите, как не хватает ваших?</h2>
             </div>
             <div class="panorama__photo">
-                  <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="panorama__item-photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg" class="panorama__item-photo">
+                <source media="(min-width: 670px)" srcset="img/panorama-tablet@1x.jpg" class="panorama__item-photo">
+                <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="panorama__item-photo">
+              </picture>
                 <div class="panorama__container">
                     <div class="panorama__today">Панорама дня</div>
                 </div>
@@ -68,7 +72,7 @@
             </div>
 
             <div class="panorama__gallery">
-              <div class="panorama__container">
+              <div class="panorama__container panorama__container--flex">
                 <div class="panorama__item">
                     <img src="img/photo-1-mobile@1x.jpg" alt="" class="panorama__item-photo">
                     <div class="panorama__item-post">
@@ -78,10 +82,10 @@
                                 <time>(5 часов назад)</time>
                             </div>
                         </div>
-                        <div class="panorama__text">
+                        <div class="panorama__text panorama__text--item">
                             <p>Вчера он на луну летал, сегодня в руки к нам попал</p>
                         </div>
-                        <div class="panorama__like">
+                        <div class="panorama__like panorama__like--item">
                             <span>Нравится: 356</span>
                         </div>
                     </div>
@@ -96,10 +100,10 @@
                                 <time>(12 часов назад)</time>
                             </div>
                         </div>
-                        <div class="panorama__text">
+                        <div class="panorama__text panorama__text--item">
                             <p>Соседи будут рады!</p>
                         </div>
-                        <div class="panorama__like">
+                        <div class="panorama__like panorama__like--item">
                             <span>Нравится: 666</span>
                         </div>
                     </div>
@@ -114,10 +118,10 @@
                                 <time>(20 часов назад)</time>
                             </div>
                         </div>
-                        <div class="panorama__text">
+                        <div class="panorama__text panorama__text--item">
                             <p>Здесь могла быть ваша цитата о высоком и вечном</p>
                         </div>
-                        <div class="panorama__like">
+                        <div class="panorama__like panorama__like--item">
                             <span>Нравится: 215</span>
                         </div>
                     </div>
@@ -132,10 +136,10 @@
                                 <time>(25 часов назад)</time>
                             </div>
                         </div>
-                        <div class="panorama__text">
+                        <div class="panorama__text panorama__text--item">
                             <p>Самая кубанская в мире!</p>
                         </div>
-                        <div class="panorama__like">
+                        <div class="panorama__like panorama__like--item">
                             <span>Нравится: 4</span>
                         </div>
                     </div>
@@ -150,10 +154,10 @@
                                 <time>(40 часов назад)</time>
                             </div>
                         </div>
-                        <div class="panorama__text">
+                        <div class="panorama__text panorama__text--item">
                             <p>Где снег то?</p>
                         </div>
-                        <div class="panorama__like">
+                        <div class="panorama__like panorama__like--item">
                             <span>Нравится: 150</span>
                         </div>
                     </div>
@@ -168,10 +172,10 @@
                                 <time>(45 часов назад)</time>
                             </div>
                         </div>
-                        <div class="panorama__text">
+                        <div class="panorama__text panorama__text--item">
                             <p>Всем GM и взаимные лайки!</p>
                         </div>
-                        <div class="panorama__like">
+                        <div class="panorama__like panorama__like--item">
                             <span>Нравится: 2560</span>
                         </div>
                     </div>
@@ -185,11 +189,14 @@
                 <h2 class="upload__heading">Выкладывайте всё, что накопилось в телефоне!</h2>
             </div>
           <div class="upload__filter">
-            <div class="upload__container">
+            <div class="upload__container upload__container--flex">
                     <div class="upload__wrapper--left">
-                        <img src="img/photo-7-mobile@1x.jpg" alt="">
+                      <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg" class="upload__photo">
+                        <source media="(min-width: 670px)" srcset="img/photo-7-tablet@1x.jpg" class="upload__photo">
+                        <img src="img/photo-7-mobile@1x.jpg" alt="" class="upload__photo">
+                      </picture>
                     </div>
-                  </div>
                     <div class="upload__wrapper--right">
                         <form action="#" class="upload__form">
                           <div class="upload__tools">
@@ -212,6 +219,7 @@
                             </div>
                         </form>
                     </div>
+            </div>
             </div>
         </section>
     </main>
