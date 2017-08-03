@@ -1,0 +1,27 @@
+.user-platform {
+  margin-top: 24px;
+  text-align: left;
+
+  &__item {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+  }
+
+  &__title::before {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    border: 2px solid @grey-border;
+    border-radius: 50%;
+    background: @white;
+  }
+}

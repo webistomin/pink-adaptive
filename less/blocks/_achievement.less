@@ -1,0 +1,23 @@
+.achievement {
+  text-align: left;
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__item::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    border: 2px solid @grey-border;
+    background: @white;
+  }
+
+  & li {
+    margin-bottom: 40px;
+  }
+}
