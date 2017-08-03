@@ -1,4 +1,4 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![dependencies Status](https://david-dm.org/webistomin/pink-adaptive/status.svg)](https://david-dm.org/webistomin/pink-adaptive) [![Dependency status][dependency-image]][dependency-url] 
 
 <table>
   <thead>
