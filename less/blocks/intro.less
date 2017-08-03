@@ -1,5 +1,4 @@
-@media @mobile-width-only {
-  .intro {
+.intro {
     &__heading {
       min-height: 462px;
       font-size: 0;
@@ -10,6 +9,7 @@
 
       @media @retina-mob {
         background-image: url("../img/iphone-hand-mobile@2x.png"),url("../img/background-mobile@2x.jpg");
+        background-size: 262px auto, cover;
       }
     }
 
@@ -18,6 +18,12 @@
       min-height: 237px;
       background-image: url("../img/bg-back-mobile@1x.jpg");
       background-position: center top;
+      background-size: initial;
+
+      @media @retina-mob {
+        background-image: url("../img/bg-back-mobile@2x.jpg");
+        background-size: cover;
+      }
     }
 
     &__heading--photo {
@@ -31,6 +37,10 @@
       padding-top: 100px;
       margin: 0 auto;
       background-image: none;
+
+      @media @retina-mob {
+        background-image: none;
+      }
     }
 
     &__download-app {
@@ -42,7 +52,7 @@
       padding: 15px 0;
     }
   }
-}
+
 
 @media @mobile-and-tablet {
   .intro {
@@ -160,7 +170,8 @@
       }
 
       &__heading {
-        width: 245px;
+        width: 25%;
+        min-height: 145px;
         padding-top: 207px;
         font-size: 40px;
         line-height: 1.2;
@@ -169,6 +180,7 @@
         margin-left: 95px;
         color: @white;
         text-align: center;
+        background-image: none;
       }
 
       &__heading--photo {
