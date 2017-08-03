@@ -9,7 +9,7 @@
   </thead>
   <tbody>
     <tr>
-      <td width="22%"><code>npm i</code></td>
+      <td width="30%"><code>npm i</code></td>
       <td>Установить зависимости</td>
     </tr>
     <tr>
