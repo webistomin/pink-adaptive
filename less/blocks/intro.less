@@ -3,14 +3,21 @@
     &__heading {
       min-height: 462px;
       font-size: 0;
-      background-image: url("../img/iphone-hand-mobile.png"), url("../img/background-mobile@1x.jpg");
+      background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/background-mobile@1x.jpg");
       background-position: 20% 176px, center top;
       background-repeat: no-repeat, no-repeat;
       background-size: auto, cover;
 
       @media @retina-mob {
-        background-image: url("../img/iphone-hand-mobile@1x.png"),url("../img/background-mobile@1x.jpg");
+        background-image: url("../img/iphone-hand-mobile@2x.png"),url("../img/background-mobile@2x.jpg");
       }
+    }
+
+    &--photo {
+      font-size: 24px;
+      min-height: 237px;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
     }
 
     &__heading--photo {
@@ -40,11 +47,8 @@
 @media @mobile-and-tablet {
   .intro {
 
-    &--photo {
-      font-size: 24px;
-      min-height: 237px;
-      background-image: url("../img/background-mobile@1x.jpg");
-      background-position: center top;
+    &__heading--photo {
+      background-image: none;
     }
 
     &__container {
@@ -144,8 +148,15 @@
 
       &--photo {
         min-height: 440px;
-        background-image: url("../img/background-tablet@1x.jpg");
+        background-image: url("../img/bg-back-tablet@1x.jpg");
         background-position: center top;
+
+        @media @retina-tab {
+          background-image: url("../img/bg-back-tablet@2x.jpg");
+          background-size: cover;
+          background-position: center top;
+          background-repeat: no-repeat;
+        }
       }
 
       &__heading {
@@ -164,7 +175,7 @@
         width: 340px;
         padding-top: 184px;
         font-size: 50px;
-        margin-left: 30%;
+        margin: 0 auto;
 
       }
 
@@ -204,6 +215,17 @@
       background-size: auto 76%,cover;
     }
 
+      &--photo {
+        min-height: 394px;
+        background-image: url("../img/bg-back-desktop@1x.jpg");
+        background-position: center top;
+
+        @media @retina-desk {
+          background-image: url("../img/bg-back-desktop@2x.jpg");
+          background-size: cover;
+        }
+      }
+
       &__heading {
         width: 250px;
         padding-top: 207px;
@@ -214,6 +236,19 @@
         text-align: center;
         margin: 50px;
         margin-bottom: 0;
+      }
+
+      &__heading--photo {
+        width: 450px;
+        padding-top: 105px;
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+        margin: 50px;
+        margin-bottom: 0;
+        margin-left: 26%;
       }
 
       &__container {
