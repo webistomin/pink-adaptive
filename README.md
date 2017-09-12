@@ -25,8 +25,12 @@
 
 ---
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
+## _Не удаляйте и не обращайте внимание на файлы:_
+*	### `.editorconfig`
+*	### `.gitignore`
+*	### `.travis.yml`
+*	### `package.json`
+*	### `.csscomb.json`
 ---
 
 ![alt text](mockup/Pink-browser.jpg)
